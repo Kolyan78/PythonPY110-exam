@@ -33,7 +33,7 @@ def get_price(): # Функция выдает случайную стоимос
 def get_author(): # Функция для генерации фейкового автора, количество авторов выбрается случайным образом от 1 до 3
     return [fake.name() for _ in range(random.randint(1, 3))]
 
-def get_item(pk = 1): # Функция генератор для создания словаря.
+def get_item(pk = 1): # Функция генератор для создания словаря
     while True:
         yield {
             "model": conf.MODEL,
