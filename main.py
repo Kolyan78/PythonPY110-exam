@@ -34,8 +34,6 @@ def get_author(): # Функция для генерации фейкового 
     return [fake.name() for _ in range(random.randint(1, 3))]
 
 def get_item(pk = 1): # Функция генератор для создания словаря.
-    # Пока не знаю как сделать параметр pk изменяющимся при каждом вызове.
-    # Он всегда выдет одно и то же число
     while True:
         yield {
             "model": conf.MODEL,
