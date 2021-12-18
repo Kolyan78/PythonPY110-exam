@@ -54,8 +54,10 @@ def get_item(pk=1):
 if __name__ == "__main__":
     list_ = [next(get_item()) for _ in range(5)]
     print(list_)
-    with open("output.json", "w", encoding="utf8"):
-        json.dumps(list_)
+    with open("output.json", "w", encoding="utf8") as f:
+
+        f.write(json.dumps(list_))
+
 
     # for _ in range(5):
     #     print(next(get_item()))
