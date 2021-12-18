@@ -52,11 +52,6 @@ def get_item(pk = 1): # Функция генератор для создани�
         }
         pk += 1
 
-def func(i = 1):
-    while True:
-        yield i
-        i += 1
-
 
 if __name__ == "__main__":
     item = get_item()
